@@ -1,0 +1,92 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Secure.master.cs" Inherits="travelportal_Secure" %>
+<%@ Register Src="../Control/Ad_Menu.ascx" TagName="Menu" TagPrefix="ccl" %>
+<%@ Register Src="../Control/Footer.ascx" TagName="footer" TagPrefix="ccl" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Admin Page</title>
+    <!--Style Sheets-->
+    <link href="Style/Admin.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Frame.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Default.css" rel="stylesheet" type="text/css" />
+    <link href="JQuery_Accordion/accordion.css" rel="stylesheet" type="text/css" />
+    <!--Java Scripts-->
+     <script type="text/javascript" src="Script/FormCheck.js"></script>
+    <script type="text/javascript" src="Script/Admin.js"></script>
+    <script type="text/javascript" src="Editor/wysiwyg.js"></script>
+    <script type="text/javascript" src="JQuery_Accordion/jquery.min.js"></script>
+    <script type="text/javascript" src="JQuery_Accordion/ddaccordion.js"></script>
+    <script type="text/javascript" src="JQuery_Accordion/accordionInit.js"></script>
+    <%--Sexylight files Start here--%>
+    <link rel="stylesheet" href="css/global.css" type="text/css" media="all" />
+  <script type="text/javascript" src="../http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src="Jquery/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="Jquery/sexylightbox.v2.3.jquery.min.js"></script>
+  <link rel="stylesheet" href="css/sexylightbox.css" type="text/css" media="all" />
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      SexyLightbox.initialize({color:'black', dir: 'sexyimages'});
+    });
+  </script>
+  <style>
+  .alertbox
+  {
+    background  : url(images/dialog-help.png) no-repeat scroll left top;
+    margin      : 0 10px;
+    padding     : 0 0 5px 40px;
+    font-family : Verdana;
+    font-size   : 12px;
+    text-align  : left;
+  }
+  .alertbox .buttons
+  {
+    text-align  : right;
+  }
+  </style>
+
+    <%--Sexylight files End Here--%>
+
+
+     <!--CK Editor :: Files (START)-->
+    <script type="text/javascript" src="Script/ckeditor/ckeditor.js"></script>
+    <!--CK Editor :: Files (END)-->
+
+      <!-- //Accordian -->
+     <link href="../dist/css/accordion.min.css" rel="stylesheet">
+
+</head>
+<body>
+<form id="form1" runat="server">
+<div id="page">
+<div id="sidebar">
+<div id="logo">
+	<%--<h1><a href="#"></a></h1>--%> 
+</div>
+<!-- end header -->
+<ccl:Menu ID="menu" runat="Server" />
+<!-- end menu -->
+</div>
+<!-- end sidebar -->
+<div id="content">
+<div><%--<img src="../images/banner.jpg" alt="" width="740" height="180" />--%></div>
+<div class="boxed">
+    <div style="float:right">
+      <p class="meta"><a href="Profile.aspx">Profile</a>|<a href="Default.aspx?OD=LO">LogOut</a></p>
+    </div>
+        <asp:contentplaceholder id="CPH" runat="server">
+        </asp:contentplaceholder>
+</div>
+</div>
+<!-- end content -->
+<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+<ccl:footer id="footer" runat="server" />
+</form>
+</body>
+      <script src="../dist/js/accordion.min.js"></script>
+       <script>
+       var accordion = new Accordion('.accordion-container');
+       </script>
+</html>

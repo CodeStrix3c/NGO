@@ -1,0 +1,85 @@
+﻿
+img {
+	border-width: 0;
+}
+
+/* 1 HEADER */
+
+#resume #photo {
+	position: absolute;
+	left: 37px;
+	top: 20px;
+}
+
+#resume .first {
+	margin-top: 0;
+	border-top: 1px solid #bababa;
+	padding-top: 1.5em;
+}
+
+
+#albums {
+	background-image: url(../AlbumImages/body-repeat-photo.gif);
+	padding: 0px 15px;
+	padding-bottom: 2px;
+}
+
+.view {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.view .photo-frame {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item {
+	padding: 10px 10px;
+	color: #B2B2B2;
+}
+
+.item h4 {
+	margin-bottom: 0.4em;
+}
+
+.nullpanel {
+	padding: 150px;
+	width: auto;
+	text-align: center;
+}
+
+/* 2.3 PHOTOS, DETAILS, ADMIN/DETAILS PAGE */
+
+#photos, #details, #admin-details {
+	background-image: url(../AlbumImages/body-repeat-photo.gif);
+	padding: 0;
+}
+
+.buttonbar {
+	background-image: url(../AlbumImages/photonav-bg.gif);
+	background-repeat: repeat-x;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 4px;
+	height: 33px;
+	text-align: center;
+}
+
+.buttonbar-top {
+	background-image: url(../AlbumImages/photonav-top-bg.gif);
+}
+
+#photos .view, #admin-details .view {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* 3 FOOTER */
+
+/* Inline styles are used because image controls hard code a border property */
+
+.photo_198 {
+	border: 4px solid #FFFFFF;
+}

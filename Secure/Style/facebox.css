@@ -1,0 +1,80 @@
+body
+{
+	height : 100px;
+}
+
+#facebox .b {
+  /* background:url(../Images/b.png);*/
+   background-color: Black;
+}
+
+#facebox .tl {
+ /* background:url(../Images/tl.png);*/
+  background-color: Black;
+}
+
+#facebox .tr {
+  /*background:url(../Images/tr.png);*/
+  background-color: Black;
+}
+
+#facebox .bl {
+  /*background:url(../Images/bl.png);*/
+  background-color: Black;
+}
+
+#facebox .br {
+ /* background:url(../Images/br.png);*/
+  background-color: Black;
+}
+
+#facebox {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+#facebox .popup {
+  position: relative;
+}
+
+#facebox table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+#facebox .body {
+  padding: 10px;
+  background: #fff;
+  width: 450px;
+  height: 100px;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+}
+
+#facebox .footer {
+  border-top: 1px solid #DDDDDD;
+  padding-top: 5px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  padding: 0;
+}

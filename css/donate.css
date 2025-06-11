@@ -1,0 +1,958 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+img, button, fieldset, input, textarea, select {
+    border: 0;
+    outline: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.flr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.clear {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+}
+
+.dispaly-block {
+    display: block;
+}
+
+.dispaly-inline {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: top;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.right-side-sec {
+    width: 720px;
+    padding: 0 0 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 3px 3px 0 #e5e5e5;
+    filter: Shadow(Color=#e5e5e5, Direction=130, Strength=6);
+    );
+    line-height: 34px;
+    color: #444;
+}
+
+
+.form-sec p, .donate-sec p {
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0 0 18px 0;
+    color: #444;
+}
+
+    .form-sec p strong span {
+        color: #e5030d;
+    }
+
+.form-sec-inner li { /*display:block; */
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    margin: 0 0 21px;
+    width: 100%;
+}
+
+    .form-sec-inner li p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+
+.contact-form-sec, .regis-form-sec { /*width:48%;*/
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    width: 100%;
+}
+
+    .contact-form-sec li, .regis-form-sec li {
+        color: #444;
+        font-size: 15px;
+    }
+
+        .contact-form-sec li input[type="text"], .contact-form-sec li input[type="password"], .regis-form-sec li input[type="text"], .regis-form-sec li input[type="password"], .jqTransformSelectWrapper,
+        .contact-form-sec li textarea, .regis-form-sec li textarea, .comments {
+            height: 36px;
+            width: 45%;
+            line-height: 18px;
+            line-height: 35px\9;
+            padding: 0 1%;
+            background: #f6f6f6 url(../images/border.png) repeat-x 0 bottom;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+        }
+
+        .contact-form-sec li input[type="text"] {
+            width: 45.9%;
+        }
+
+        .contact-form-sec li textarea, .comments, .regis-form-sec li textarea {
+            height: 84px;
+            padding: 1%;
+            resize: none;
+            line-height: 23px;
+            margin: 0 3.5% 0 0;
+            vertical-align: top;
+        }
+
+.contact-sec li input[type="submit"], .form-sec-inner li input[type="submit"], .form-sec-inner li input[type="button"] {
+    width: 111px;
+    text-align: center;
+    background: #0d0d0d;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    padding: 7px 0;
+    *padding: 5px 0;
+    border-top: 1px solid #9e9e9e;
+    border-bottom: 1px solid #9e9e9e;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contact-form-sec li input:first-child, .regis-form-sec li input:first-child, #selected-currency {
+    margin: 0 3.5% 0 0;
+}
+
+.form-sec-inner li input[type="button"] {
+    background: #e60812;
+}
+
+
+#selected-currency {
+    vertical-align: top;
+}
+
+.post {
+    width: 47.8%;
+}
+
+    .post input, .city input {
+        width: 96% !important;
+        padding: 0 2% !important;
+    }
+
+.city {
+    width: 47.5%;
+}
+
+.radio {
+    width: 48%;
+}
+
+    .radio small {
+        font-size: 15px;
+        margin: 0 5px 0 46px;
+    }
+
+        .radio small:first-child {
+            margin: 0 5px 0;
+        }
+
+.contact-form-sec li p {
+    font-size: 12px;
+}
+
+.comments {
+    width: 98%;
+}
+
+.red-border {
+    border-bottom: 1px solid #eb444d;
+}
+
+.donate-donors-sec {
+    padding: 45px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.address-sec {
+    width: 38%;
+    color: #444;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+    .address-sec h2, .middle-sec h2 {
+        color: #d39935;
+        font-size: 18px;
+    }
+
+    .address-sec span {
+        font-size: 18px;
+    }
+
+    .address-sec p {
+        text-transform: capitalize;
+    }
+
+.address-detail {
+    background: #444;
+    color: #fff;
+    margin: 1% 0;
+    min-width: 20%;
+    padding: 0 2% 0 0;
+}
+
+    .address-detail a {
+        color: #fff;
+    }
+
+    .address-detail img {
+        vertical-align: middle;
+        margin: 0 10px 0 0;
+    }
+
+.address-sec p a {
+    color: #eb0d17;
+}
+
+.login-sec {
+    width: 221px;
+    background: #f8c301 url(../images/login.png) no-repeat left center;
+}
+
+    .login-sec a, .regi-sec a {
+        color: #000000;
+        padding: 6px 0 7px 66px;
+        text-align: left;
+    }
+
+        .login-sec a span, .regi-sec a span {
+            font-size: 10px;
+        }
+
+.regis-form-sec li.dob > div {
+    width: 30%;
+    line-height: 32px;
+    display: inline-block;
+    margin: 0 2% 0 0;
+}
+
+.regi-sec {
+    width: 182px;
+    background: #444 url(../images/register.png) no-repeat left center;
+}
+
+    .regi-sec a {
+        color: #fff;
+    }
+
+.or {
+    margin: 10px 0 0 0;
+}
+
+.space {
+    margin: 6% 0 0 0;
+}
+
+
+.jqTransformSelectWrapper {
+    position: relative;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+    width: 46% !important;
+}
+
+    .jqTransformSelectWrapper ul {
+        position: absolute;
+        top: 35px;
+        left: 0px;
+        border: solid 1px #ccc;
+        display: none;
+        overflow-y: auto;
+        z-index: 9999;
+        background: #ccc;
+        width: 100% !important;
+    }
+
+        .jqTransformSelectWrapper ul li {
+            margin: 0;
+        }
+
+.jqTransformSelectWrapper-nation div span, .jqTransformSelectWrapper-date div span {
+    font-size: 15px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 6px 0;
+    font-family: 'Open Sans',sans-serif;
+    line-height: 20px \9;
+    width: 100%!important;
+}
+
+.jqTransformSelectWrapper a.jqTransformSelectOpen {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 19px;
+    height: 20px;
+    background: url(../images/select.png) no-repeat center center;
+    padding: 10px 0 0;
+    top: 2px;
+    right: 8px;
+}
+
+.jqTransformSelectWrapper ul a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+    background-color: #ccc;
+    font-size: 9px;
+    font-size: 14px;
+    font-family: 'Open Sans',sans-serif;
+    display: block;
+}
+
+    .jqTransformSelectWrapper ul a.selected {
+        background: #fff;
+        color: #333;
+    }
+
+        .jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {
+            background: #999;
+            color: #FFF;
+        }
+
+.jqTransformHidden {
+    display: none;
+}
+
+.jqTransformSelectWrapper-date > .jqTransformSelectWrapper {
+    width: 99% !important;
+}
+
+
+.tabbing-sec {
+    background: #fff;
+    padding: 0 0 7px;
+}
+
+#tabs li {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    text-align: center;
+    width: 20%;
+    padding: 14px 0 16px;
+    border-bottom: 5px solid #000;
+}
+
+    #tabs li a {
+        color: #444;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+        width: 95%;
+        *margin: 0 0 0 -15px;
+    }
+
+        #tabs li a:hover {
+            text-decoration: none;
+        }
+
+    #tabs li:hover, #tabs li.active {
+        background: url(../images/tabbing-arrow.jpg) no-repeat right center;
+        border-bottom: 5px solid #d1942a;
+    }
+
+.tab-content article p {
+    margin: 0;
+    line-height: 25px;
+}
+
+.cheque-dd-sec {
+    font-size: 15px;
+    background: url(../images/cheque-icon.jpg) no-repeat left 8px;
+    padding: 0 0 0 35px;
+    margin: 0 0 0 8px;
+    width: 74%;
+}
+
+.help-age-address {
+    width: 100%;
+}
+
+    .help-age-address > .address-detail {
+        margin: 2% 2% 2% 0;
+    }
+
+.how-do-donate {
+    padding: 40px 0;
+    margin: 92px auto 0;
+}
+
+    .how-do-donate h2 {
+        text-transform: uppercase;
+        font-size: 20px;
+        text-shadow: 3px 3px 0 #e5e5e5;
+        filter: Shadow(Color=#e5e5e5, Direction=130, Strength=6);
+        );
+        line-height: 34px;
+        color: #444;
+    }
+
+/* donate page new */
+#header {
+    background: #000;
+    height: 86px;
+    position: relativel;
+}
+
+    #header .container {
+        position: relative;
+    }
+
+    #header .logo {
+        position: absolute;
+        top: 29px;
+        left: 0;
+    }
+
+.outer-bg {
+    background: url(../images/bg.jpg) repeat 0 0;
+    float: left;
+    width: 100%;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.inner-bg {
+    background: #fff;
+    float: left;
+    width: 100%;
+}
+
+.donate-sec {
+    padding: 50px 0 0;
+    background: url(../images/bg.png) repeat 0 0;
+}
+
+    .donate-sec p span {
+        color: #e5030d;
+    }
+
+    .donate-sec .heading {
+        float: left;
+        width: 96%;
+        margin: 0 2% 20px;
+    }
+
+        .donate-sec .heading h1 {
+            font-size: 22px;
+            line-height: 24px;
+            color: #444;
+            font-weight: 600;
+            width: auto;
+            float: left;
+        }
+
+    .donate-sec .social-icons {
+        float: right;
+    }
+
+        .donate-sec .social-icons a {
+            margin: 0 5px 0 0;
+        }
+
+.tab-text, .donate-form-sec, .donate-sec, .tab-pic, .tab-nav, .donate-type, .all-cards-sec {
+    float: left;
+    width: 100%;
+}
+
+.tab-nav {
+    background: #f8f8f8;
+    border-top: 2px solid #ededed;
+    border-bottom: 2px solid #ededed;
+}
+
+    .tab-nav li {
+        display: inline-block;
+        font-size: 15px;
+        line-height: 17px;
+        color: #444;
+        width: 14.2%;
+        text-align: center;
+        padding: 10px;
+    }
+
+        .tab-nav li a {
+            color: #444;
+            text-transform: uppercase;
+        }
+
+.tab-pic {
+    background: #fff;
+    margin: 3px 0;
+}
+
+    .tab-pic ul {
+        border-top: 2px solid #ededed;
+    }
+
+    .tab-pic li {
+        display: inline-block;
+        width: 14.2%;
+        text-align: center;
+        padding: 25px 11px;
+    }
+
+        .tab-pic li strong {
+            display: none;
+        }
+
+        .tab-pic li a {
+            display: block;
+        }
+
+        .tab-pic li img {
+            border: 3px solid #d8d8d8;
+        }
+
+.tab-text p {
+    font-size: 15px;
+    line-height: 27px;
+    color: #da2d35;
+    font-weight: bold;
+    padding: 15px 20px 0;
+}
+
+.red-text {
+    color: #da2d35;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.donate-form-sec {
+    padding: 30px 2%;
+    width: 96%;
+}
+
+.donate-form-left {
+    float: left;
+    width: 710px;
+    padding: 0 20px 0 0;
+    border-right: 1px solid #e4e4e4;
+}
+
+.donate-form-right {
+    float: right;
+    width: 243px;
+}
+
+    .donate-form-right h2 {
+        color: #d1942a;
+        text-shadow: 3px 3px 0px #E5E5E5;
+        font-size: 17px;
+        line-height: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 0 20px;
+    }
+
+.jqTransformSelectWrapper-nation {
+    width: 100%;
+}
+
+    .jqTransformSelectWrapper-nation .jqTransformSelectWrapper {
+        width: 97% !important;
+    }
+
+.national .jqTransformSelectWrapper-nation .jqTransformSelectWrapper {
+    margin: 0 0 27px;
+}
+
+.Currency .post {
+    margin: 0 3.5% 0 0;
+}
+
+    .Currency .post span {
+        margin: 0;
+        width: 100%!important;
+    }
+
+.donate-next {
+    padding: 55px 20px 15px;
+    min-height: 510px;
+}
+
+    .donate-next p {
+        font-size: 13px;
+        line-height: 24px;
+        color: #000;
+        margin: 0 0 10px;
+    }
+
+        .donate-next p strong {
+            font-size: 14px;
+        }
+
+.donation-pay {
+    margin: 20px 0 0;
+}
+
+    .donation-pay li {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0 0 15px;
+    }
+
+    .donation-pay input.sbt_btn {
+        background: #000;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .donation-pay input {
+        width: auto;
+        margin: 0 5px 0px 0px;
+        vertical-align: top;
+        color: #fff;
+        font-size: 14px;
+        line-height: 16px;
+        cursor: pointer;
+    }
+
+.red-arrow {
+    list-style: outside none disc;
+    margin: 10px 0 10px 20px;
+}
+
+    .red-arrow li {
+        margin: 0 0 5px;
+    }
+
+
+/*==================== footer start ==================*/
+footer {
+    border-top: 1px solid #dedede;
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+
+    footer section {
+        width: 77%;
+        float: left;
+    }
+
+    footer aside {
+        width: 22%;
+        text-align: center;
+        float: left;
+    }
+
+        footer aside p {
+            padding: 0;
+        }
+
+    footer p {
+        padding: 15px 0 6px;
+        font-size: 11px;
+        line-height: 13px;
+        color: #acacac;
+    }
+
+    footer a {
+        color: #acacac;
+    }
+
+/*=========================================================*/
+.jqTransformSelectWrapper ul {
+    overflow-y: scroll;
+    height: 200px;
+}
+
+.form-sec-inner li input[type="submit"] {
+    background: none repeat scroll 0 0 #e60812;
+}
+
+a.sbt_btn-sect {
+    background: none repeat scroll 0 0 #000;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+    a.sbt_btn-sect:hover {
+        text-decoration: none;
+    }
+
+/* for thankyou page */
+div.thanks {
+    margin: 0 auto;
+    width: 50%;
+}
+
+    div.thanks h3 {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 30px;
+        text-align: center;
+    }
+
+        div.thanks h3.fail {
+            color: #ff0000;
+        }
+
+    div.thanks p {
+        font-size: 16px;
+    }
+
+    div.thanks a {
+        color: #000000;
+    }
+
+        div.thanks a.back-button {
+            background: none repeat scroll 0 0 #666;
+            color: #fff;
+            display: inline-block;
+            float: left;
+            margin: 10px 0;
+            padding: 5px 10px;
+        }
+
+
+
+/*=========================================================*/
+
+@media (max-width:1024px) {
+    .container {
+        width: 96%;
+        overflow: hidden;
+    }
+
+    #header .logo {
+        position: relative;
+        top: 0;
+        display: block;
+    }
+
+    .donate-sec {
+        padding: 20px 0px 0px;
+    }
+
+    .donate-form-sec {
+        padding: 10px 2%;
+    }
+
+    .donate-form-left {
+        width: 70%;
+    }
+
+    .form-sec-inner li {
+        margin: 0px 0px 10px;
+    }
+
+    footer section {
+        width: 50%;
+        float: left;
+    }
+
+    footer aside {
+        width: 50%;
+        text-align: right;
+    }
+}
+
+@media (max-width:768px) {
+    .tab-nav {
+        display: none;
+    }
+
+    .tab-pic li {
+        width: 16%;
+        vertical-align: top;
+        padding: 15px 10px 15px;
+    }
+
+        .tab-pic li img {
+            width: 100%;
+        }
+
+        .tab-pic li strong {
+            display: block;
+            font-size: 12px;
+            line-height: 14px;
+            color: #444;
+        }
+
+    .tab-text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .donate-form-left {
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+
+    .donate-form-right {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:640px) {
+    #header .logo {
+        width: 300px;
+        margin: 10px;
+    }
+
+        #header .logo img {
+            width: 100%;
+        }
+
+    .tab-pic li {
+        width: 28%;
+    }
+
+        .tab-pic li strong {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+    .cheque-dd-sec {
+        margin: 10px 0px 0px 8px;
+    }
+
+    .donate-sec .heading h1 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .Currency .post, .post {
+        margin: 0;
+        width: 101%;
+    }
+
+    .contact-form-sec li input[type="text"], .contact-form-sec li input[type="password"], .regis-form-sec li input[type="text"], .regis-form-sec li input[type="password"], .jqTransformSelectWrapper, .contact-form-sec li textarea, .regis-form-sec li textarea, .comments {
+        width: 98%;
+        margin: 0 0 20px;
+    }
+
+    .post input, .city input {
+        width: 95% !important;
+    }
+
+    .jqTransformSelectWrapper-nation div span, .jqTransformSelectWrapper-date div span {
+        padding: 6px;
+    }
+
+    .radio {
+        width: 100%;
+        margin: 10px 0 20px;
+    }
+
+    .form-sec-inner li {
+        margin: 0;
+    }
+
+    .regis-form-sec li.dob > div {
+        width: 99%;
+    }
+
+    .dob .jqTransformSelectWrapper-date > .jqTransformSelectWrapper {
+        margin: 0 0 10px;
+    }
+
+    .help-age-address {
+        margin: 15px 0 0;
+    }
+}
+
+@media (max-width:480px) {
+    .donate-sec {
+        padding: 10px 0px 0px;
+    }
+
+    .tab-pic li {
+        width: 42%;
+    }
+
+    .donate-sec .heading {
+        margin: 0;
+    }
+
+        .donate-sec .heading h1 {
+            margin: 0 0 10px;
+        }
+
+    .form-sec p, .donate-sec p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    footer section, footer aside {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+
+    .donate-sec .heading h1 {
+        font-size: 16px;
+        text-indent: 10px;
+    }
+}
+

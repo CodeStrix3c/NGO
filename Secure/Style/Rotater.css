@@ -1,0 +1,75 @@
+﻿.rotator 
+{ 
+	width: 480px; 
+	height:283px; 
+	border: 6px solid #890208; 
+	float: left; 
+	display: inline;
+	position: relative; 
+	/*background: #47423c; */
+	overflow: hidden; 
+}
+.rotator h3 
+{ 
+	float: left; 
+	display: inline;
+	color: #f9a25e;
+	font-size: 2.2em; 
+	border-right: 1px solid #57524d;
+	padding: 12px 22px 12px 16px; 
+	margin-top: 8px; 
+}
+.featured_content 
+{
+	 float: left; 
+	 margin: 8px 0 0 20px;
+	  padding-top: 7px;
+	   display: inline;
+ }
+.featured_content p
+{ 
+	margin: 2px 0 0 0; 
+}
+.btn_rotator 
+{ 
+	position: absolute;
+	 bottom: 4px; 
+	 right:8px;
+ }
+.btn_rotator p
+{
+	font-size: 1.1em;
+ }
+
+#divMainRotatorNav 
+{
+	 position:absolute; 
+	 bottom:18px; 
+	 right:12px; 
+	 z-index:99;
+	  }
+#divMainRotatorNav a 
+{ 
+	margin: 0 0 0 4px; 
+	padding: 3px 6px;
+	 background: #890208; 
+	 text-decoration: none; 
+	 color: #ffffff;
+	 }
+#divMainRotatorNav a:hover 
+{ 
+	background: #ffffff; 
+	text-decoration: none;
+	 color: #890208; 
+}
+#divMainRotatorNav a.activeSlide 
+{ 
+	background: #ffffff;
+	 text-decoration: none;
+	  color: #5f554a;
+ }
+#divMainRotatorNav a:focus 
+{ 
+	outline: none; 
+	
+}

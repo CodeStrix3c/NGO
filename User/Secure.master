@@ -1,0 +1,49 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Secure.master.cs" Inherits="User_Secure" %>
+<%@ Register Src="../Control/Us_Menu.ascx" TagName="Menu" TagPrefix="ccl" %>
+<%@ Register Src="../Control/Footer.ascx" TagName="footer" TagPrefix="ccl" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>User Page</title>
+     <link href="../Style/Admin.css" rel="stylesheet" type="text/css" />
+    <link href="../Style/Frame.css" rel="stylesheet" type="text/css" />
+    <link href="../Style/Default.css" rel="stylesheet" type="text/css" />
+    <link href="../JQuery_Accordion/accordion.css" rel="stylesheet" type="text/css" />
+    <!--Java Scripts-->
+     <script type="text/javascript" src="../Script/FormCheck.js"></script>
+    <script type="text/javascript" src="../Script/Admin.js"></script>
+    <script type="text/javascript" src="../Editor/wysiwyg.js"></script>
+    <script type="text/javascript" src="../JQuery_Accordion/jquery.min.js"></script>
+    <script type="text/javascript" src="../JQuery_Accordion/ddaccordion.js"></script>
+    <script type="text/javascript" src="../JQuery_Accordion/accordionInit.js"></script>
+</head>
+<body>
+<form id="form1" runat="server">
+<div id="page">
+<div id="sidebar">
+<div id="logo">
+	<h1><a href="#"></a></h1> 
+</div>
+<!-- end header -->
+<ccl:Menu ID="menu" runat="Server" />
+<!-- end menu -->
+</div>
+<!-- end sidebar -->
+<div id="content">
+<div><img src="../images/banner.jpg" alt="" width="740" height="180" /></div>
+<div class="boxed">
+    <div style="float:right">
+      <p class="meta"><a href="Profile.aspx">Profile</a>|<a href="../Alhayat_Ad/Default.aspx?OD=LO">LogOut</a></p>
+    </div>
+        <asp:contentplaceholder id="CPH" runat="server">
+        </asp:contentplaceholder>
+</div>
+</div>
+<!-- end content -->
+<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+<ccl:footer id="footer" runat="server" />
+</form>
+</body>
+</html>

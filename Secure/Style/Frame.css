@@ -1,0 +1,150 @@
+﻿/* Photo Border for All Pages Except the Albums Page */
+
+.photo-frame .topx-- {
+	background-image: url(../AlbumImages/frame-topx--.gif);
+	background-repeat: no-repeat;
+	height: 4px;
+	vertical-align: top;
+}
+.photo-frame .top-x- {
+	background-image: url(../AlbumImages/frame-top-x-.gif);
+	background-repeat: repeat-x;
+	height: 4px;
+}
+.photo-frame .top--x {
+	background-image: url(../AlbumImages/frame-top--x.gif);
+	background-repeat: no-repeat;
+	height: 4px;
+	vertical-align: top;
+}
+
+.photo-frame .midx-- {
+	background-image: url(../AlbumImages/frame-midx--.gif);
+	background-repeat: repeat-y;
+	width: 4px;
+	height: auto;
+}
+.photo-frame .mid--x {
+	background-image: url(../AlbumImages/frame-mid--x.gif);
+	background-repeat: repeat-y;
+	width: 4px;
+	height: auto;
+}
+
+.photo-frame .botx-- {
+	background-image: url(../AlbumImages/frame-botx--.gif);
+	background-repeat: no-repeat;
+	width: 4px;
+	height: 4px;
+	vertical-align: top;
+}
+.photo-frame .bot-x- {
+	background-image: url(../AlbumImages/frame-bot-x-.gif);
+	background-repeat: repeat-x;
+	width: auto;
+	height: 4px;
+}
+.photo-frame .bot--x {
+	background-image: url(../AlbumImages/frame-bot--x.gif);
+	background-repeat: no-repeat;
+	width: 4px;
+	height: 4px;
+	vertical-align: bottom;
+}
+
+/* Photo Border for the Album Page */
+
+.album-frame .topx----,
+.album-frame .top----x,
+.album-frame .botx----,
+.album-frame .bot----x {
+	height: 10px;
+	width: 10px;
+}
+
+.album-frame .top-x--- {
+	background-image: url(../AlbumImages/album-tstretch.gif);
+	background-repeat: repeat-x;
+	text-align: left;
+	height: 10px;
+	width: auto;
+}
+.album-frame .top--x-- {
+	background-image: url(../AlbumImages/album-tstretch.gif);
+	background-repeat: repeat-x;
+	height: 10px;
+	width: auto;
+}
+.album-frame .top---x- {
+	background-image: url(../AlbumImages/album-tstretch.gif);
+	background-repeat: repeat-x;
+	text-align: right;
+	height: 10px;
+	width: auto;
+}
+
+.album-frame .mtpx---- {
+	background-image: url(../AlbumImages/album-lstretch.gif);
+	background-repeat: repeat-y;
+	vertical-align: top;
+	height: auto;
+	width: 10px;
+}
+.album-frame .mtp----x {
+	background-image: url(../AlbumImages/album-rstretch.gif);
+	background-repeat: repeat-y;
+	vertical-align: top;
+	height: auto;
+	width: 10px;
+}
+
+.album-frame .midx---- {
+	background-image: url(../AlbumImages/album-lstretch.gif);
+	background-repeat: repeat-y;
+	height: auto;
+	width: 14px;
+}
+.album-frame .mid----x {
+	background-image: url(../AlbumImages/album-rstretch.gif);
+	background-repeat: repeat-y;
+	height: auto;
+	width: 10px;
+}
+
+.album-frame .mbtx---- {
+	background-image: url(../AlbumImages/album-lstretch.gif);
+	background-repeat: repeat-y;
+	vertical-align: bottom;
+	height: auto;
+	width: 10px;
+}
+.album-frame .mbt----x {
+	background-image: url(../AlbumImages/album-rstretch.gif);
+	background-repeat: repeat-y;
+	vertical-align: bottom;
+	height: auto;
+	width: 10px;
+}
+
+.album-frame .bot-x--- {
+	background-image: url(../AlbumImages/album-bstretch.gif);
+	background-repeat: repeat-x;
+	text-align: right;
+	height: 10px;
+	width: auto;
+}
+.album-frame .bot--x-- {
+	background-image: url(../AlbumImages/album-bstretch.gif);
+	background-repeat: repeat-x;
+	height: 10px;
+	width: auto;
+}
+.album-frame .bot---x- {
+	background-image: url(../AlbumImages/album-bstretch.gif);
+	background-repeat: repeat-x;
+	text-align: left;
+	height: 10px;
+	width: auto;
+}
+
+/* Form Items */

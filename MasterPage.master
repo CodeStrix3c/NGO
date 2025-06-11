@@ -1,0 +1,343 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+
+<%@ Register Src="UserControls/Banner.ascx" TagName="Banner" TagPrefix="uc1" %>
+
+<%@ Register Src="UserControls/mainmenu.ascx" TagName="mainmenu" TagPrefix="uc2" %>
+
+<%@ Register Src="UserControls/HomeDetails.ascx" TagName="HomeDetails" TagPrefix="uc3" %>
+
+<%@ Register Src="UserControls/LatestNews.ascx" TagName="LatestNews" TagPrefix="uc4" %>
+
+<%@ Register Src="UserControls/LatestVideo.ascx" TagName="LatestVideo" TagPrefix="uc5" %>
+
+<%@ Register src="UserControls/Shehjar_Cat.ascx" tagname="Shehjar_Cat" tagprefix="uc6" %>
+
+<%@ Register src="UserControls/OngoingProjects.ascx" tagname="OngoingProjects" tagprefix="uc7" %>
+
+<%@ Register src="UserControls/topmenu.ascx" tagname="topmenu" tagprefix="uc8" %>
+
+<%@ Register src="UserControls/footer.ascx" tagname="footer" tagprefix="uc9" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+<head runat="server">
+
+
+  <link rel="shortcut icon" href="images/logo.png">
+  <title>Ehsaase-e-Insaniyat Trust</title>
+
+  <link rel="stylesheet" href="css/joom_settings.css" type="text/css" />
+  <link rel="stylesheet" href="css/joomgallery.css" type="text/css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" />
+  <link rel="stylesheet" href="css/jquery.fancybox-buttons.css" type="text/css" />
+  <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css" type="text/css" />
+  <link rel="stylesheet" href="css/template.css" type="text/css" />
+  <link rel="stylesheet" href="css/all-hovers.css" type="text/css" />
+  <link rel="stylesheet" href="css/lrstyle.css" type="text/css" />
+  <link rel="stylesheet" href="css/module_default.css?v=1415026638" type="text/css" />
+  <link rel="stylesheet" href="css/modal.css" type="text/css" />
+  <link rel="stylesheet" href="css/caroufredsel.css" type="text/css" />
+  <link rel="stylesheet" href="css/camera.css" type="text/css" />
+  <link rel="stylesheet" href="css/default_icemegamenu.css" type="text/css" />
+  <link rel="stylesheet" href="css/default_icemegamenu-reponsive.css" type="text/css" />
+
+  <script src="js/plusone.js" type="text/javascript"></script>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/jquery-noconflict.js" type="text/javascript"></script>
+  <script src="js/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="js/caption.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/mootools-core.js" type="text/javascript"></script>
+  <script src="js/core.js" type="text/javascript"></script>
+  <script src="js/mootools-more.js" type="text/javascript"></script>
+  <script src="js/modal.js" type="text/javascript"></script>
+  <script src="js/jquery.caroufredsel.js" type="text/javascript"></script>
+  <script src="js/camera.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      jQuery(window).on('load', function () {
+          new JCaption('img.caption');
+      });
+      window.setInterval(function () { var r; try { r = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP") } catch (e) { } if (r) { r.open("GET", "./", true); r.send(null) } }, 840000);
+      jQuery(document).ready(function () {
+          jQuery('.hasTooltip').tooltip({ "html": true, "container": "body" });
+      });
+      jQuery(function ($) {
+          SqueezeBox.initialize({});
+          SqueezeBox.assign($('a.modal').get(), {
+              parse: 'rel'
+          });
+      });
+  </script>
+
+
+<script>
+    jQuery(window).on('load', function () {
+        if (jQuery(this).mousewheel) {
+            jQuery(this).mousewheel(handle);
+            jQuery("body").mousewheel(handle);
+        }
+    });
+
+    function handle(turn, delta) {
+        var time = 430;
+        var distance = 400;
+
+        jQuery('html, body').stop().animate({
+
+            scrollTop: jQuery(window).scrollTop() - (distance * delta)
+
+        }, time);
+
+        return true;
+    }
+</script>
+
+<script type="text/javascript" src="js/tmlazyload.js"></script>
+<script type='text/javascript' src='https://www.google.com/jsapi?key='></script>
+<script type='text/javascript' src='https://www.google.com/uds/?file=earth&amp;v=1'></script>
+<script type='text/javascript' src='js/googleearth.js'></script>
+<script type='text/javascript' src='js/googlemapsv3.js'></script>
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("img.lazy").lazy({
+            threshold: 0,
+            visibleOnly: false,
+            effect: "fadeIn",
+            effectTime: 500,
+            enableThrottle: true,
+            throttle: 500,
+            afterLoad: function (element) {
+                if (typeof $.fn.BlackAndWhite_init == "function") {
+                    jQuery(element).parents(".item_img a .lazy_container").BlackAndWhite_init();
+                }
+                setTimeout(function () {
+                    element.parent(".lazy_container").addClass("lazyloaded");
+                }, 500)
+            }
+        });
+    });
+            </script>
+
+	<script type="text/javascript" src="js/jquery.ajax.min.js"></script>
+	<!--Load Script and Stylesheet -->
+	<script type="text/javascript" src="calander/jquery.simple-dtpicker.js"></script>
+	<link type="text/css" href="calander/jquery.simple-dtpicker.css" rel="stylesheet" />
+	<!---->
+
+
+          <!-- //for-mobile-apps -->
+        <link href="tab/css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <script src="tab/js/jquery-2.1.1.min.js"></script>
+
+
+      
+
+   
+        
+</head>
+<body class="com_content view-category task- itemid-134 body__">
+    <form id="form1" runat="server">
+  <!-- Body -->
+  <div id="wrapper">
+    <div class="wrapper-inner">
+            <!-- Top -->
+      <div id="top-row" style="background-color:#00A6D6">
+        <div class="row-container">
+          <div class="container">
+              <uc8:topmenu ID="topmenu1" runat="server" />
+          </div>
+        </div>
+      </div>
+            <!-- Header -->
+            <div id="header-row">
+        <div class="row-container">
+          <div class="container">
+            <header>
+              <div class="row">
+                <!-- Logo -->
+                <div id="logo" class="span4a">
+                  <a href="Default.aspx">
+                   <img src="images/logo.png" alt="Orphan Care" width="100px">
+                    <h1>Ehsaase-e-Insaniyat Trust</h1>
+                    <span class="hightlight"></span>
+                  </a>
+                </div>
+
+                <div class="moduletable   span8a">
+                    <div class="icemegamenu">
+                        <div class="ice-megamenu-toggle">
+                            <a data-toggle="collapse" data-target=".nav-collapse">Menu</a>
+                        </div>
+                        <div class="nav-collapse icemegamenu collapse  " style="float:right">
+                           
+                             <ul id="icemegamenu" class="meganizr mzr-slide mzr-responsive">
+                               
+                                 <uc2:mainmenu ID="mainmenu1" runat="server" />
+
+                            </ul>
+
+                        </div>
+                    </div>
+                                               
+                                                  <script>
+                                                      jQuery(function ($) {
+                                                          $('#icemegamenu li.parent[class^="iceMenuLiLevel"]').hover(function () {
+                                                              $('#icemegamenu li.parent[class^="iceMenuLiLevel"]').not($(this).parents('li')).not($(this)).removeClass('hover');
+                                                              $(this).addClass('hover').attr('data-hover', 'true')
+                                                              $(this).find('>ul.icesubMenu').addClass('visible')
+                                                          },
+                                                          function () {
+                                                              $(this).attr('data-hover', 'false')
+                                                              $(this).delay(800).queue(function (n) {
+                                                                  if ($(this).attr('data-hover') == 'false') {
+                                                                      $(this).removeClass('hover').delay(250).queue(function (n) {
+                                                                          if ($(this).attr('data-hover') == 'false') {
+                                                                              $(this).find('>ul.icesubMenu').removeClass('visible')
+                                                                          }
+                                                                          n();
+                                                                      });
+                                                                  }
+                                                                  n();
+                                                              })
+                                                          })
+                                                          var ismobile = navigator.userAgent.match(/(iPhone)|(iPod)|(iPad)|(android)|(webOS)/i)
+                                                          if (ismobile && screen.width > 767) {
+                                                              $('#icemegamenu').sftouchscreen();
+                                                          }
+                                                          $(window).load(function () {
+                                                              $('#icemegamenu').parents('[id*="-row"]').scrollToFixed({ minWidth: 768 });
+                                                          })
+                                                      });
+                                                   </script>
+
+
+                                                  <script type="text/javascript">
+                                                      jQuery(document).ready(function () {
+                                                          var browser_width1 = jQuery(window).width();
+                                                          jQuery("#icemegamenu").find(".icesubMenu").each(function (index) {
+                                                              var offset1 = jQuery(this).offset();
+                                                              var xwidth1 = offset1.left + jQuery(this).width();
+                                                              if (xwidth1 >= browser_width1) {
+                                                                  jQuery(this).addClass("ice_righttoleft");
+                                                              }
+                                                          });
+
+                                                      })
+                                                      jQuery(window).resize(function () {
+                                                          var browser_width = jQuery(window).width();
+                                                          jQuery("#icemegamenu").find(".icesubMenu").removeClass("ice_righttoleft");
+                                                          jQuery("#icemegamenu").find(".icesubMenu").each(function (index) {
+                                                              var offset = jQuery(this).offset();
+                                                              var xwidth = offset.left + jQuery(this).width();
+
+                                                              if (xwidth >= browser_width) {
+                                                                  jQuery(this).addClass("ice_righttoleft");
+                                                              }
+                                                          });
+                                                      });
+                                                    </script>
+
+                </div>
+              </div>
+            </header>
+          </div>
+            
+        </div>
+                
+      </div>
+               
+               
+                  <!-- Maintop -->
+    
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                   
+     
+                  <!-- Bottom -->
+      <div id="bottom-row">
+        <div class="row-container">
+          <div class="container">
+            <div id="bottom" class="row">
+              <div class="moduletable   span12"><div class="mod-menu">
+	<ul class="nav menu partners">
+	<li class="item-274"><span class="separator"><span class="lazy_container" style="width: 78px;"><span class="lazy_preloader" style="padding-top: 66.666666666667%;"></span>
+        <img src="https://livedemo00.template-help.com/joomla_52178/plugins/system/tmlazyload/blank.gif" class="lazy" data-src="images/partners/icon1.jpg" alt="Icon1" /></span></span></li>
+        <li class="item-275"><span class="separator"><span class="lazy_container" style="width: 50px;"><span class="lazy_preloader" style="padding-top: 104%;"></span><img src="https://livedemo00.template-help.com/joomla_52178/plugins/system/tmlazyload/blank.gif" class="lazy" data-src="images/partners/icon2.jpg" alt="Icon2" /></span></span></li>
+        <li class="item-276"><span class="separator"><span class="lazy_container" style="width: 103px;"><span class="lazy_preloader" style="padding-top: 50.485436893204%;"></span><img src="https://livedemo00.template-help.com/joomla_52178/plugins/system/tmlazyload/blank.gif" class="lazy" data-src="images/partners/icon3.jpg" alt="Icon3" /></span></span></li>
+        <li class="item-277"><span class="separator"><span class="lazy_container" style="width: 50px;"><span class="lazy_preloader" style="padding-top: 104%;"></span><img src="https://livedemo00.template-help.com/joomla_52178/plugins/system/tmlazyload/blank.gif" class="lazy" data-src="images/partners/icon4.jpg" alt="Icon4" /></span></span></li>
+        <li class="item-278"><span class="separator"><span class="lazy_container" style="width: 77px;"><span class="lazy_preloader" style="padding-top: 67.532467532468%;"></span><img src="https://livedemo00.template-help.com/joomla_52178/plugins/system/tmlazyload/blank.gif" class="lazy" data-src="images/partners/icon5.jpg" alt="Icon5" /></span></span></li>
+        <li class="item-279"><span class="separator"><span class="lazy_container" style="width: 78px;"><span class="lazy_preloader" style="padding-top: 66.666666666667%;"></span><img src="https://livedemo00.template-help.com/joomla_52178/plugins/system/tmlazyload/blank.gif" class="lazy" data-src="images/partners/icon6.jpg" alt="Icon6" /></span></span></li>
+        <li class="item-280"><span class="separator"><span class="lazy_container" style="width: 112px;"><span class="lazy_preloader" style="padding-top: 46.428571428571%;"></span><img src="https://livedemo00.template-help.com/joomla_52178/plugins/system/tmlazyload/blank.gif" class="lazy" data-src="images/partners/icon7.jpg" alt="Icon7" /></span></span></li>
+        <li class="item-281"><span class="separator"><span class="lazy_container" style="width: 112px;"><span class="lazy_preloader" style="padding-top: 46.428571428571%;"></span><img src="https://livedemo00.template-help.com/joomla_52178/plugins/system/tmlazyload/blank.gif" class="lazy" data-src="images/partners/icon8.jpg" alt="Icon8" /></span></span></li>
+        <li class="item-282"><span class="separator"><span class="lazy_container" style="width: 76px;"><span class="lazy_preloader" style="padding-top: 68.421052631579%;"></span><img src="https://livedemo00.template-help.com/joomla_52178/plugins/system/tmlazyload/blank.gif" class="lazy" data-src="images/partners/icon9.jpg" alt="Icon9" /></span></span></li>	
+
+	</ul>
+             </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div id="push"></div>
+    </div>
+  </div>
+    <div id="footer-wrapper">
+    <div class="footer-wrapper-inner">
+      <!-- Footer -->
+   
+        <uc9:footer ID="footer1" runat="server" />
+
+   </div>
+    <div id="back-top">
+    <a href="#"><span></span> </a>
+  </div>
+      
+    
+
+
+            <script src="js/jquery.centerIn.js"></script>
+        <script>
+            jQuery(function ($) {
+                $('.modal.loginPopup').alwaysCenterIn(window);
+            });
+        </script>
+                <script src="js/jquery.modernizr.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+    <script>
+        jQuery(function ($) {
+            if (!Modernizr.touch) {
+                $(window).load(function () {
+                    $.stellar({ responsive: true, horizontalScrolling: false });
+                });
+            }
+        });
+    </script>
+        <script src="js/jquery.simplr.smoothscroll.min.js"></script>
+        <script>
+        jQuery(function ($) {
+            if (!Modernizr.touch) {
+                $.srSmoothscroll({ ease: 'easeOutQuart' });
+            }
+        });
+        </script>
+
+         
+
+      <script src="js/jquery.fancybox.pack.js"></script>
+      <script src="js/jquery.fancybox-buttons.js"></script>
+      <script src="js/jquery.fancybox-media.js"></script>
+      <script src="js/jquery.fancybox-thumbs.js"></script>
+      <script src="js/jquery.pep.js"></script>
+      <script src="js/jquery.vide.min.js"></script>
+      <script src="js/scripts.js"></script>
+
+       
+         
+    </form>
+    </body>
+  
+</html>
+
